@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(void) {
+  /*variaveis, float = calculo_simples e double = calculo_"exato"*/
+  float nota1;
+  float nota2;
+  float media;
+  
+  /*Insercão dos dados pelo úsuario*/
+  printf("digite a primeira nota: ");
+  scanf("%f", &nota1);
+
+  printf("digite a segunda nota: "); 
+  scanf("%f", &nota2);
+
+  /*calculo da media */
+  media = (nota1 + nota2) / 2;
+  /*.1 é o número de casas decimais que sera exibido na nota */
+  printf("sua nota e: %.1f\n", media);
+  
+  /*condição para saber se o aluno está reprovado */
+  if (media <= 5.0 && media <= 6.9 ) {
+    printf("O alunos está de recuperação\n");
+  }
+
+  return 0;
+}
